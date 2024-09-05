@@ -1,0 +1,258 @@
+* {
+	 box-sizing: border-box;
+}
+ body {
+	 background-color: #662e91;
+	 font-family: 'Roboto', Arial;
+	 max-height: 100%;
+	 max-width: 100%;
+}
+ .diwali-wrap {
+	 position: relative;
+	 width: 100%;
+	 padding-bottom: 28px;
+}
+ .diwali-wrap .bg-pattern {
+	 position: absolute;
+	 left: -20em;
+	 top: -20em;
+	 animation: round-rotate 40s linear infinite reverse;
+}
+ .diwali-wrap #canvas {
+	 display: block;
+	 position: absolute;
+	 z-index: -1;
+	 top: 0;
+}
+ .diwali-wrap .bg-pattern {
+	 position: fixed;
+	 width: 100%;
+	 top: -2em;
+	 left: 0;
+	 opacity: 0.2;
+	 animation: round-rotate 120s linear infinite reverse;
+}
+ @media only screen and (min-width: 426px) and (max-width: 768px) {
+	 .diwali-wrap .bg-pattern {
+		 top: -12em;
+	}
+}
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	 .diwali-wrap .bg-pattern {
+		 top: -20em;
+	}
+}
+ @media only screen and (min-width: 1025px) {
+	 .diwali-wrap .bg-pattern {
+		 top: -28em;
+	}
+}
+ header {
+	 position: relative;
+	 height: 100px;
+}
+ header img {
+	 position: absolute;
+	 left: 10%;
+	 width: 30px;
+	 animation: swing 3s linear infinite;
+	 -webkit-transform-origin: 50% 0%;
+	 -moz-transform-origin: 50% 0%;
+	 -o-transform-origin: 50% 0%;
+	 transform-origin: 50% 0%;
+}
+ header img:last-child {
+	 right: 10%;
+	 left: auto;
+	 animation: swing 3s linear infinite reverse;
+	 -webkit-transform-origin: 50% 0%;
+	 -moz-transform-origin: 50% 0%;
+	 -o-transform-origin: 50% 0%;
+	 transform-origin: 50% 0%;
+}
+ section.top-greet {
+	 position: relative;
+	 text-align: center;
+	 z-index: 1;
+}
+ section.top-greet h1 {
+	 color: #f7931e;
+	 font-size: 2.5em;
+	 margin: 0;
+	 text-transform: capitalize;
+}
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	 section.top-greet h1 {
+		 font-size: 3.5em;
+	}
+}
+ @media only screen and (min-width: 1025px) {
+	 section.top-greet h1 {
+		 font-size: 5.5em;
+	}
+}
+ section.top-greet h1:nth-child(3) {
+	 text-transform: uppercase;
+	 font-size: 3em;
+	 margin-bottom: 0.2em;
+	 color: #f16524;
+	 animation: scale 2s linear infinite reverse;
+}
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	 section.top-greet h1:nth-child(3) {
+		 font-size: 4em;
+	}
+}
+ @media only screen and (min-width: 1025px) {
+	 section.top-greet h1:nth-child(3) {
+		 font-size: 6em;
+	}
+}
+ section.top-greet pre {
+	 color: #ddb3ff;
+	 line-height: 1.3em;
+	 margin: 0;
+}
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	 section.top-greet pre {
+		 font-size: 1.5em;
+	}
+}
+ @media only screen and (min-width: 1025px) {
+	 section.top-greet pre {
+		 font-size: 2em;
+	}
+}
+ section.top-greet input {
+	 display: block;
+	 text-align: center;
+	 margin: 0 auto 20px;
+	 font-size: 1.5em;
+	 background-color: transparent;
+	 border: none;
+	 outline: none;
+	 color: #e0d5e9;
+	 display: none;
+}
+ section.top-greet input::placeholder {
+	 color: rgba(224, 213, 233, 0.6);
+}
+ section.top-greet a {
+	 color: #fff;
+	 text-decoration: none;
+	 border: 1px solid rgba(192, 137, 238, 0.45);
+	 border-radius: 20px;
+	 padding: 3px 13px;
+	 background-color: #f16524;
+	 display: block;
+	 width: 45%;
+	 margin: 0 auto;
+	 outline: none;
+}
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	 section.top-greet a {
+		 font-size: 1.5em;
+	}
+}
+ @media only screen and (min-width: 1025px) {
+	 section.top-greet a {
+		 font-size: 2em;
+	}
+}
+ section.lamp-wrap img {
+	 left: 0;
+	 right: 0;
+	 margin: auto;
+	 transition: all 0.2s linear;
+}
+ section.lamp-wrap img.main-lamp {
+	 position: relative;
+	 width: 100%;
+	 max-width: 17em;
+}
+ @media only screen and (min-width: 769px) and (max-width: 1024px) {
+	 section.lamp-wrap img.main-lamp {
+		 max-width: 17em;
+	}
+}
+ @media only screen and (min-width: 1025px) {
+	 section.lamp-wrap img.main-lamp {
+		 max-width: 17em;
+	}
+}
+ section.lamp-wrap img.left-lamp {
+	 left: 5%;
+	 right: auto;
+	 bottom: 0;
+	 width: 80px;
+	 transform: rotateY(180deg);
+}
+ section.lamp-wrap img.right-lamp {
+	 right: 5%;
+	 left: auto;
+	 bottom: 0;
+	 width: 80px;
+}
+ section.lamp-wrap {
+	 position: absolute;
+	 bottom: 30px;
+	 text-align: center;
+	 width: 100%;
+}
+ section.lamp-wrap img {
+	 position: absolute;
+}
+ footer {
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 background-color: #813ab8;
+}
+ footer p {
+	 margin: 5px;
+	 padding: 0 5px;
+}
+ footer p a {
+	 color: #ddb3ff;
+	 text-decoration: none;
+}
+ footer p a:nth-of-type(2) {
+	 float: right;
+}
+ @keyframes swing {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 25% {
+		 transform: rotate(5deg);
+	}
+	 50% {
+		 transform: rotate(0deg);
+	}
+	 75% {
+		 transform: rotate(-5deg);
+	}
+	 100% {
+		 transform: rotate(0deg);
+	}
+}
+ @keyframes round-rotate {
+	 from {
+		 transform: rotate(0deg);
+	}
+	 to {
+		 transform: rotate(360deg);
+	}
+}
+ @keyframes scale {
+	 0% {
+		 transform: scale(0.9);
+	}
+	 50% {
+		 transform: scale(1);
+	}
+	 100% {
+		 transform: scale(0.9);
+	}
+}
+ 
